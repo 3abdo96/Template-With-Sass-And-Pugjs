@@ -1,0 +1,54 @@
+.footer {
+  .container {
+    .about {
+      margin-top: 50px;
+      text-align: center;
+      .info {
+        h4 {
+          font-weight: 600;
+          margin-bottom: 40px;
+        }
+        p {
+          font: {
+            size: $paraSize;
+            weight: 300;
+          }
+          line-height: 1.7;
+          color: $paraColor;
+          margin-bottom: 30px;
+        }
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        cursor: pointer;
+        margin-bottom: 30px;
+        i {
+          color: $mainColor;
+          transition: $transitionDur;
+          &:hover {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+      p {
+        padding: 10px;
+        color: $paraColor;
+        font: {
+          size: $paraSize;
+          weight: 300;
+        }
+        span {
+          color: $mainColor;
+          font: {
+            size: 20px;
+            weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

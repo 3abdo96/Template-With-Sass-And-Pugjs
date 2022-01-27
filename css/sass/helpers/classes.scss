@@ -1,0 +1,66 @@
+@import "../helpers/variables";
+
+.special-headings {
+  margin: 100px auto;
+  text-align: center;
+  h1 {
+    font: {
+      size: 36px;
+      weight: 600;
+    }
+  }
+  p {
+    font: {
+      size: 14p;
+      weight: 300;
+    }
+    color: $paraColor;
+    padding: 10px;
+  }
+  @media #{$maxMobile} {
+    h1 {
+      font: {
+        size: 25px;
+      }
+    }
+    p {
+      font: {
+        size: 13px;
+        weight: 300;
+      }
+    }
+  }
+}
+
+// Start Landing
+.landing-section {
+  background-image: url("../imgs/background.webp");
+  background-size: cover;
+  min-height: 53vh;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  margin-bottom: 100px;
+  &::after {
+    @include overlay;
+    z-index: -1;
+  }
+  .text {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font: {
+        size: 36px;
+        weight: 600;
+      }
+      @media #{$maxMobile} {
+        font-size: 30px;
+      }
+    }
+  }
+}
+// End Landing

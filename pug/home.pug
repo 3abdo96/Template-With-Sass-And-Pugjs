@@ -1,0 +1,90 @@
+include mixins
+doctype
+html(lang="en")
+  head
+    +meta
+    link(rel="stylesheet" href="../css/homepage.css")
+    title Home
+  body
+    // Start Header 
+    +header
+    // End Header 
+    // Start Landing 
+    .landing
+      .text
+        h1 World's Biggest University
+        p University is the dolor sit amet consectetur adipisicing elit. Repudiandae quisquam facilis at corporis,quibusdam to your better future
+        a(href="#") Visit Us To know More
+    // End Landing 
+    // Start Course 
+    +course
+    // End Course 
+    // Start Campus 
+    .campus
+      .container
+        .special-headings
+          h1 Our Global Campus
+          p Voluptatum consequatur, enim natus itaque ut nesciunt modi exercitationem sint nostrum voluptates nulla excepturi
+        .countries  
+          .box
+            |
+            .
+              #[img(src="../imgs/london.webp")]#[h3 London]
+          .box
+            |
+            .
+              #[img(src="../imgs/newyork.webp")]#[h3 New York]
+          .box
+            |
+            .
+              #[img(src="../imgs/washington.webp")]#[h3 washington]
+    // End Campus 
+    // Start Facilities 
+    +facility
+    // End Facilities 
+    // Start Testimonials
+    .testimonials
+      .container
+        .special-headings
+          h1 What Our Student Say's
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        .students
+          .box
+            |
+            .
+              #[img(src="../imgs/user1.webp")]#[h3 Elizabeth pitch]#[p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fugiat ipsum odit. Sunt aut nostrum deserunt minus cumque praesentium ut debitis illum cum? Molestiae libero excepturi in voluptatem tempora ipsam?]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star")]
+              #[i(class="far fa-star")]
+          .box
+            |
+            .
+              #[img(src="../imgs/user2.webp")]#[h3 Davic berkley]#[p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fugiat ipsum odit. Sunt aut nostrum deserunt minus cumque praesentium ut debitis illum cum? Molestiae libero excepturi in voluptatem tempora ipsam?]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star")]
+              #[i(class="fas fa-star-half-alt")]
+    // End Testimonials 
+    // Start Contact
+    .contact
+      .container
+        .info
+          .text
+            p Enroll in Online program from your comfort zone
+            p Anywhere from world
+            |
+            |
+            .
+              #[a(href="#") contact us]
+    // End Contact 
+    // Start About 
+    .footer
+      .container
+        +footer
+    // End About 
+    .top
+      i(class="fas fa-arrow-up")
+    +script

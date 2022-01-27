@@ -1,0 +1,50 @@
+include mixins
+doctype
+html
+  head
+    +meta
+    link(rel="stylesheet" href="../css/blogpage.css")
+  body
+    // Start Header 
+    +header
+    // End Header 
+    // Start Landing 
+    .landing-section
+      .text
+        h1 Our Certificates & Online Programs For 2021
+    // End Landing 
+    // Start Blog 
+    .blog
+      .container
+        .comment
+          img(src="../imgs/certificate.webp")
+          h2 Learn In Demand Skill's And Get Certified By Us
+          p Adipisicing elit. Iusto incidunt nobis, sapiente nostrum commodi deleniti hic magnam p doloremque non molestias repellat dolor esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vero nulla quaerat minima doloremque? Quibusdam repellat aliquid inventore dicta animi eligendi magni error fugit cum. Dolore consectetur tenetur magni dolor
+          p(class="hidden") Quibusdam repellat aliquid inventore dicta animi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt nobis, sapiente nostrum commodi deleniti hic magnam p doloremque non molestias repellat dolor esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vero nulla quaerat minima doloremque? Quibusdam repellat aliquid inventore dicta animi eligendi magni error fugit cum. Dolore consectetur tenetur magni dolorLorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt nobis, sapiente nostrum commodi deleniti hic magnam p doloremque non molestias repellat dolor esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vero nulla quaerat minima doloremque? Quibusdam repellat aliquid inventore dicta animi eligendi magni error fugit cum. Dolore consectetur tenetur magni dolor
+          p(class="hidden") Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto incidunt nobis, sapiente nostrum commodi deleniti hic magnam p doloremque non molestias repellat dolor esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vero nulla quaerat minima doloremque? Quibusdam repellat aliquid inventore dicta animi
+          p(class="hidden") consectetur, adipisicing elit. Iusto incidunt nobis, sapiente nostrum commodi deleniti hic magnam p doloremque non molestias repellat dolor esse Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vero nulla quaerat minima doloremque? Quibusdam repellat aliquid inventore dicta animi eligendi magni error fugit cum. Dolore consectetur tenetur magni
+          |
+          |
+          .
+            #[span Read More #[i(class="fas fa-angle-double-right")]]
+          .box
+            h2 Leave a Comment
+            input(type="text",placeholder="Enter Your Name")
+            input(type="email",placeholder="Enter Your Email")
+            textarea(placeholder="Your Comment")
+            button(type="submit") Post Comment
+        .categories
+          h3 Post Categories
+          -var categories =["Business Analytics","Machine Learning","Data Science","Computer Science","Auto CAD","Journalism","Commerce","Communiction Skills","Advance Physics","Statistics","Business Administration"]
+          -var numbers = [21,34,32,40,54,20,28,15,42,58,82]
+          ul
+            -for(var x=0;x<categories.length;x++)
+              li=categories[x]
+                span=numbers[x]
+    // End Blog 
+    // Start Footer 
+    +footer
+    // End Footer
+    .top
+      i(class="fas fa-arrow-up")
+    +script

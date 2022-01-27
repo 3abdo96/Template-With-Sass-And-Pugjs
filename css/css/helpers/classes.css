@@ -1,0 +1,14 @@
+.special-headings {
+  margin: 30px auto;
+  text-align: center;
+}
+.special-headings h1 {
+  font-size: 36px;
+  font-weight: 600px;
+}
+.special-headings h1 p {
+  font-size: 14p;
+  font-weight: 300px;
+  color: #a7a9a7;
+  padding: 10px;
+}

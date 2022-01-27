@@ -1,0 +1,82 @@
+mixin meta
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  link(rel="stylesheet" href="../css/normalize.css")
+  link(rel="stylesheet" href="../css/all.min.css")
+  link(rel="preconnect" href="https://fonts.googleapis.com")
+  link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+  link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet")
+
+mixin script
+  script(src="../js/main.js")
+
+
+mixin header
+  .header#header
+    .container 
+      a(href="home.html")
+        img(src="../imgs/logo.png" alt="eduford-logo")
+      | 
+      |
+      .  
+        #[i(class="fas fa-bars toggle-menu")]
+      -var navArr=["home","about","course","blog","contact"]
+      ul()
+        each val in navArr,hrefArr
+          li
+            a(href=val+".html")=val
+
+mixin course
+  .course
+    .container
+      .special-headings
+        h1 Course's We Offer
+        p Asperiores nesciunt temporibus, voluptatum error hic architecto nemo n.
+      .courses
+        .box
+          h3 Intermediate
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odio quos, blanditiis et numquam, officiis, voluptas commodi qui optio non perspiciatis deserunt omnis nihil sint. Repellendus ut debitis sunt officiis!
+        .box
+          h3 Degree
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odio quos, blanditiis et numquam, officiis, voluptas commodi qui optio non perspiciatis deserunt omnis nihil sint. Repellendus ut debitis sunt officiis!
+        .box
+          h3 Post Graduation
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odio quos, blanditiis et numquam, officiis, voluptas commodi qui optio non perspiciatis deserunt omnis nihil sint. Repellendus ut debitis sunt officiis!
+
+mixin facility
+  .facilities
+    .container
+      .special-headings
+        h1 Our Facilities
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      .facility
+        .box
+          |
+          .
+            #[img(src="../imgs/library.webp")]#[h3 World Class Library]#[p Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit]
+        .box
+          |
+          .
+            #[img(src="../imgs/basketball.webp")]#[h3 Largest Playground]#[p Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit]     
+        .box
+          |
+          .
+            #[img(src="../imgs/cafeteria.webp")]#[h3 Testy and Healthy food]#[p Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit]
+
+mixin footer
+  .footer
+    .container
+      .about
+        .info
+          h4 About Us
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fugiat ipsum odit. Sunt aut nostrum deserunt minus cumque praesentium ut debitis illumMolestiae libero excepturi in voluptatem tempora ipsam?
+        .social
+          |
+          .
+            #[i(class="fab fa-facebook-f")]
+            #[i(class="fab fa-twitter")]
+            #[i(class="fab fa-instagram")]
+            #[i(class="fab fa-linkedin-in")]
+        p Made By #[span Manoo]

@@ -1,0 +1,56 @@
+include mixins
+doctype
+html
+  head
+    +meta
+    link(rel="stylesheet" href="../css/contactpage.css")
+  body
+    // Start Header 
+    +header
+    // End Header 
+    // Start Landing 
+    .landing-section
+      .text
+        h1 Contact Us
+    // End Landing 
+    .container
+      .map
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13808.964573035635!2d31.2282952!3d30.0872794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1642903160059!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    // Start Contact 
+    .contact
+      .container
+        .info
+          .box
+            |
+            .
+              #[i(class="fas fa-home")]
+            .text
+              h3 Universal road,Galaxy buiding
+              p Cairo,Egypt
+          .box
+            |
+            .
+              #[i(class="fas fa-phone-alt")]
+            .text
+              h3 +1 0123456789
+              p Sunday to Thursday, 10AM to 9PM
+          .box
+            |
+            .
+              #[i(class="far fa-envelope")]
+            .text
+              h3 info@eduford.com
+              p Email us for any query
+        form(action="")
+          input(type="text",placeholder="Enter Your Name")
+          input(type="email",placeholder="Enter Your Email")
+          input(type="text",placeholder="Enter Your Subject")
+          textarea(placeholder="Message")
+          button(type="submit") Send Message
+    // End Contact 
+    // Start Footer 
+    +footer
+    // End Footer
+    .top
+      i(class="fas fa-arrow-up")
+    +script

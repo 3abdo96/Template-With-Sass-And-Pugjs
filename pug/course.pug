@@ -1,0 +1,27 @@
+include mixins
+doctype
+html
+  head
+    +meta
+    link(rel="stylesheet" href="../css/coursepage.css")
+  body
+    // Start Header 
+    +header
+    // End Header 
+    // Start Landing 
+    .landing-section
+      .text
+        h1 Our Courses
+    // End Landing 
+    // Start Course 
+    +course
+    // End Course 
+    // Start Facilities  
+    +facility
+    // End Facilities 
+    // Start Footer 
+    +footer
+    // End Footer 
+    .top
+      i(class="fas fa-arrow-up")
+    +script

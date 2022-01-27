@@ -1,0 +1,34 @@
+include mixins
+doctype
+html
+  head
+    +meta
+    link(rel="stylesheet" href="../css/aboutpage.css")
+  body
+    // Start Header 
+    +header
+    // End Header 
+    // Start Landing 
+    .landing-section
+      .text
+        h1 About Us
+    // End Landing 
+    // Start About 
+    .about
+      .container
+        .info
+          h1 We are the world's largest University
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae tenetur unde voluptates corporis accusantium minus id numquam illum sit nisi similique quis Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae tenetur unde voluptates corporis accusantium minus id numquam illum sit nisi similique quis
+          |
+          |
+          .
+            #[a Explore Now]
+        .image
+          img(src="../imgs/about.webp")
+    // End About 
+    // Start Footer 
+    +footer
+    // End Footer  
+    .top
+      i(class="fas fa-arrow-up") 
+    +script

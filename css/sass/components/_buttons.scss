@@ -1,0 +1,15 @@
+.top {
+  display: none;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  right: 25px;
+  bottom: 20px;
+  text-align: center;
+  line-height: 30px;
+  background-color: $mainColor;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}

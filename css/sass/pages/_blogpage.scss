@@ -1,0 +1,118 @@
+.blog {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @media #{$maxMobile} {
+      flex-direction: column;
+      padding: 0 25px;
+      .comment {
+        margin-bottom: 35px;
+      }
+    }
+    .comment {
+      flex-basis: 68%;
+      img {
+        max-width: 100%;
+      }
+      h2 {
+        margin: 40px 0;
+        font-weight: 600;
+        color: $mainColor;
+      }
+      p {
+        color: $paraColor;
+        line-height: 1.7;
+        margin: 30px 0;
+        font: {
+          size: $paraSize;
+          weight: 300;
+        }
+        &.hidden {
+          display: none;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: $mainColor;
+        cursor: pointer;
+        margin-bottom: 20px;
+        font: {
+          weight: 600;
+        }
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #777;
+        padding: 15px 20px;
+        h2 {
+          color: $mainColor;
+        }
+        input,
+        textarea {
+          padding: 10px;
+          margin: 15px 0;
+          border: none;
+          background-color: #f0f0f0;
+          caret-color: $mainColor;
+          &:focus {
+            outline: none;
+          }
+        }
+        textarea {
+          height: 117px;
+        }
+        button {
+          width: fit-content;
+          font: {
+            size: 14px;
+            weight: 300;
+          }
+          color: $mainColor;
+          background-color: #fff;
+          border: 1px solid $mainColor;
+          padding: 12px 34px;
+          margin: 25px auto;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: $transitionDur;
+          &:hover {
+            background-color: $mainColor;
+            color: #fff;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .categories {
+      flex-basis: 29%;
+      @media #{$minSmall} and #{$maxSmall} {
+        ul {
+          li {
+            font-size: 13px;
+          }
+        }
+      }
+      h3 {
+        background-color: $mainColor;
+        color: #fff;
+        text-align: center;
+        padding: 7px 0;
+        font: {
+          size: 16px;
+          weight: 600;
+        }
+      }
+      ul {
+        li {
+          display: flex;
+          justify-content: space-between;
+          padding: 11px;
+          color: #555;
+        }
+      }
+    }
+  }
+}
